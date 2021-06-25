@@ -19,3 +19,4 @@ jobs:
       if: github.event.action == 'opened'
       with:
         project: 'https://github.com/CabooseExia/Dumb_Stuff/projects/1'
+        column_name: 'todo'
