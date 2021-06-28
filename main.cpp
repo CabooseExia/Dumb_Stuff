@@ -2,17 +2,20 @@
 using namespace std;
 
 int main()
-{
-    int firstNumber, secondNumber, sumOfTwoNumbers;
-    
-    cout << "Enter two integers: ";
-    cin >> firstNumber >> secondNumber;
+{    
+    int divisor, dividend, quotient, remainder;
 
-    // sum of two numbers in stored in variable sumOfTwoNumbers
-    sumOfTwoNumbers = firstNumber + secondNumber;
+    cout << "Enter dividend: ";
+    cin >> dividend;
 
-    // Prints sum 
-    cout << firstNumber << " + " <<  secondNumber << " = " << sumOfTwoNumbers;     
+    cout << "Enter divisor: ";
+    cin >> divisor;
+
+    quotient = dividend / divisor;
+    remainder = dividend % divisor;
+
+    cout << "Quotient = " << quotient << endl;
+    cout << "Remainder = " << remainder;
 
     return 0;
 }
